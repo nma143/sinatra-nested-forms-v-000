@@ -13,7 +13,7 @@ class Ship
   def self.all
     BOOTIES
   end
-  
+
   def self.clear
     BOOTIES.clear
   end
