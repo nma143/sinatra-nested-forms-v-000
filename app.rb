@@ -14,7 +14,7 @@ module FormsLab
 
     post '/pirates' do
         #@new_puppy = Puppy.new(params[:name], params[:breed], params[:age])
-        erb :show
+        erb :'pirates/show'
     end
 
 
