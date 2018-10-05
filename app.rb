@@ -8,9 +8,13 @@ module FormsLab
       erb :root
     end
 
+    get '/new' do
+      erb :new
+    end
+
     post '/pirates' do
-        @new_puppy = Puppy.new(params[:name], params[:breed], params[:age])
-        erb :display_puppy
+        #@new_puppy = Puppy.new(params[:name], params[:breed], params[:age])
+        erb :show
     end
 
 
