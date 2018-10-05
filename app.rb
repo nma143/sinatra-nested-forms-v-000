@@ -14,6 +14,11 @@ module FormsLab
 
     post '/pirates' do
         #@new_puppy = Puppy.new(params[:name], params[:breed], params[:age])
+        @pirate = Pirate.new(params[:pirate])
+        params[:pirate][:ships].each do |details|
+          Ship.new(details)
+        end
+        @ships = Ship.all
         erb :'pirates/show'
     end
 
